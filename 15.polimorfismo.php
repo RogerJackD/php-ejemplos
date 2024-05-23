@@ -1,4 +1,6 @@
 <?php
+
+//
 include("12clase.php");
 interface Figura {
     public function calcularArea();

@@ -26,7 +26,7 @@ $l = fgets(STDIN);
 
 $cuadrado = new cuadrado($l);
 $area = $cuadrado->calcularArea();
-echo "EL AREA DEL cuadrado ES: " . $area . "\n";
+echo "EL AREA DEL cuadrado ES:: " . $area . "\n";
 
 ///
 echo "AREA DEL CIRCULO\n";

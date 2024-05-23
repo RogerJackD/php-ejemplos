@@ -20,7 +20,7 @@
 
         private function existeCuerdas() {
             if($this->tieneCuerdas)
-                return "Si";
+                return "Sii";
             else 
                 return "No";
         }

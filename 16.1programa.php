@@ -9,7 +9,7 @@
 
     $guitarra->nombre ="yamaha";
     $guitarra->categoria ="electrica";
-    $guitarra->setearModelos("nylon , alambre , otros");
+    $guitarra->setearModelos("nylon , Alambre , otros");
     echo "\nDatos de Guitarra\n";
     echo "nombre : ".$guitarra->nombre."\n";
     echo "categoria :".$guitarra->categoria."\n";
