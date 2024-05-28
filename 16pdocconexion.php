@@ -5,7 +5,7 @@ try {
     $user="root";//user : usuario
     $pass="mysql114114";//pass : clave de usuario
     $dbh = new PDO($dsn, $user, $pass);
-    echo "Hola base de datos tengo conexion"."\n";
+    echo "Hola base de datos tengo conexionn"."\n";
 }
  catch (PDOException $e) {
     // attempt to retry the connection after some timeout for example

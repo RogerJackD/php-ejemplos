@@ -5,7 +5,7 @@ try {
     $user="root";//user : usuario
     $pass="mysql114114";//pass : clave de usuario
     $dbh = new PDO($dsn, $user, $pass);
-    echo "Hola base de datos tengo conexion"."\n";
+    echo "Hola base de datos tengo conexionn"."\n";
     $alumnos = $dbh->query('SELECT * FROM alumnos ');
     foreach ($alumnos as $row) {
         echo $row["Id_Alumno"]." ".$row["Nomb_Alumno"]." ".$row["Apel_Alumno"]." ".$row["Dire_Alumno"]."\n";
