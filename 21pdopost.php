@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Todos los campos son obligatorios." ;
     }
     $fechaLimite = '2000-01-01';
-    if ($fecha <= $fechaLimite) {
+    if ($fecha < $fechaLimite) {
         echo "la fecha de vacunacion debe ser mayor o igual a la fecha 2000/01/01";
         exit;
         
@@ -64,10 +64,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             , '$Presion_alta', '$Fatiga', '$Garraspera', '$fecha', '$resultado');";
 
         $conn->exec($sql);    
-        $conn->commit();
-        echo "Fue registrado correctamentee.";
+        
+        
     }
     catch(Exception $e) {
+        echo "Error : ".$e->getMessage();
+    }
+    try {
+        $dsn="mysql:host=localhost;dbname=covid";//dsn: data source name , nombre origen de datos
+        $user="root";//user : usuario
+        $pass="";//pass : clave de usuario
+        $dbh = new PDO($dsn, $user, $pass);
+        echo "Hola base de datos tengo conexionn"."\n";
+
+        $alumnos = $dbh->query('SELECT * FROM pacientes where id = '); //PDO::lastInsertId() 
+        foreach ($alumnos as $row) {
+            echo $row["nombres"]." ".$row["apellidos"]." ".$row["edad"]." ".$row["talla_m"]."\n";
+            
+        }
+    } catch (PDOException $e) {
+        // attempt to retry the connection after some timeout for example
         echo "Error : ".$e->getMessage();
     }
     
