@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $conn->exec($sql);    
         $conn->commit();
-        echo "Fue registrado correctamente.";
+        echo "Fue registrado correctamentee.";
     }
     catch(Exception $e) {
         echo "Error : ".$e->getMessage();

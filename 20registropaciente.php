@@ -93,7 +93,7 @@
         <input type="checkbox" id="dolor_muscular" name="dolor_muscular" value ="1">
         <label for="dolor_muscular">Dolor muscular</label><br>
         <input type="checkbox" id="gripe" name="gripe" value ="1">
-        <label for="gripe">Gripe</label><br>
+        <label for="gripe">Gripee</label><br>
         <input type="checkbox" id="Presion_alta" name="Presion_alta" value ="1">
         <label for="Presion_alta">Presión Alta</label><br>    
         <input type="checkbox" id="Fatiga" name="Fatiga" value ="1">
