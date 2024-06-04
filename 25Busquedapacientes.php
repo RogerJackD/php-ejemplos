@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busqueda de Pacientes</title>
+    <title>Busqueda de Pacientessssss</title>
 </head>
 <body>    
-    <center><h1>Busqueda de Pacientes</h1></center>
+    <center><h1>Busqueda de Pacientesssss</h1></center>
     <!-- <form action="22.1-consulta-pdo.php" method="POST"> -->
     <input type="text" placeholder="Escribe aqui" name="nombre" id="nombre" /><br>
     <label id="tos" name="tos">Tos</label><input type="checkbox" for="tos">
