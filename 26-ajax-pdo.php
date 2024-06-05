@@ -2,6 +2,7 @@
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         
+        
         $nombre = $_POST["nombre"];
         $dsn="mysql:host=localhost;dbname=covid";
         $user="root";//user : usuario
@@ -19,4 +20,6 @@
         echo "Error : ".$e->getMessage();
     }
 }
+
+
 ?>
