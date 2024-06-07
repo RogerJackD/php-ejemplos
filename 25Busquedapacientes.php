@@ -21,7 +21,9 @@
 
 
 
-    <button type="button" onclick="buscarPacientes();">Buscar</button>
+    <button type="button" onclick="buscarPacientes();">Buscarr</button>
+
+    
     <table style="border: 1px solid black;" id="tabla">
         <tr>
             <td>id</td>
@@ -49,8 +51,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="25.1-ajax.js"></script>
  
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Nuevo Paciente
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+        Nuevo Pacientee
     </button>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -62,8 +64,8 @@
                     aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <label for="name" class="form-label">id:</label>
-                    <input type="text" class="form-control" id="id2" name="id2"/>
+                    <input type="hidden" id="id2" name="id2"/>
+
 
 
                     <label for="name" class="form-label">Nombre:</label>
@@ -82,7 +84,7 @@
                     <label  name="tos">Tos</label> <br>
                     <input type="checkbox" for="tos2" id="tos2" > <br>
 
-                    <label " name="tos">fiebre</label> <br>
+                    <label  name="tos">fiebre</label> <br>
                     <input type="checkbox" for="fiebre2" id="fiebre2"> <br>
 
                     <label  name="tos">Disnea</label> <br>
@@ -113,7 +115,7 @@
 
 
                     
-                    <button class="btn btn-primary" onclick="actualizar();">Guardar</button>
+                    <button class="btn btn-primary" onclick="actualizar();" >Guardar</button>
                     <button class="btn btn-primary" onclick="cancelar();">cancelar</button>
 
 
@@ -126,5 +128,7 @@
             </div>
         </div>
     </div>
+
+    
 </body>
 </html>
